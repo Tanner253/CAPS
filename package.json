@@ -1,0 +1,23 @@
+{
+  "name": "caps",
+  "version": "1.0.0",
+  "description": "The Code Academy Parcel Service. In this sprint",
+  "main": "CAPS.js",
+  "scripts": {
+    "start": "node CAPS.js",
+    "lint": "eslint **/*.js",
+    "test": "jest --verbose --coverage",
+    "test-watch": "jest --watchAll --verbose --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tanner253/CAPS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tanner253/CAPS/issues"
+  },
+  "homepage": "https://github.com/Tanner253/CAPS#readme"
+}
