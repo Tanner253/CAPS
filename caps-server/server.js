@@ -8,6 +8,17 @@ const caps = io.of("/caps");
 caps.on('connection', (socket) => {
   console.log('Connection made to the CAPS namespace!', socket.id);
 
+  socket.onAny((event, payload) => {
+    console.log('EVENT ::' + event)
+    console.log(payload)
+  })
+
+
+  socket.on('join', ({clientId}) => {
+    socket.join(clientId);
+    socket.emit('join', clientId);
+  })
+
   socket.on("PICK-UP", (payload) => {
     console.log("hit pick up");
     caps.emit("PICK-UP", payload);
@@ -20,7 +31,6 @@ caps.on('connection', (socket) => {
 
   socket.on('DELIVERED', (payload) => {
     console.log("hit in delivered");
-    //sends emit to the socket 
     caps.emit("DELIVERED", payload)
   });
 
