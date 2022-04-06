@@ -22,6 +22,8 @@
   "homepage": "https://github.com/Tanner253/CAPS#readme",
   "dependencies": {
     "chance": "^1.1.8",
-    "jest": "^27.5.1"
+    "jest": "^27.5.1",
+    "socket.io": "^4.4.1",
+    "socket.io-client": "^4.4.1"
   }
 }

@@ -3,9 +3,9 @@
 const eventPool = require('./eventPool.js');
 const chance = require('./chance.js');
 
-const vendorHandler = require('./lib/vendor/vendor.js');
-const driverHandler = require('./lib/driver/driver.js');
-const deliveryHandler = require('./lib/delivery/delivery.js');
+const vendorHandler = require('./client/vendor/index.js');
+const driverHandler = require('./client/driver/index.js');
+const deliveryHandler = require('./client/delivery/index.js');
 
 eventPool.on('PICK-UP', vendorHandler);
 eventPool.on('IN-TRANSIT', driverHandler);
