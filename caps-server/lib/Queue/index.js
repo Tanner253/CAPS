@@ -20,5 +20,6 @@ class Queue{
     delete this.data[key];
     return value;
   }
+
 }
 module.exports = Queue;
